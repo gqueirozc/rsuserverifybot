@@ -460,7 +460,7 @@ client.on('interactionCreate', async interaction => {
             const modal = new ModalBuilder().setCustomId('setup_welcome_message_modal').setTitle('Set Welcome Message');
             const input = new TextInputBuilder()
                 .setCustomId('welcome_message')
-                .setLabel('Message — use {user} and {rules} as placeholders')
+                .setLabel('Message ({user}, {rules}, etc.)')
                 .setStyle(TextInputStyle.Paragraph)
                 .setRequired(false)
                 .setValue(guildCfg.welcomeMessage || '');
