@@ -13,7 +13,6 @@ const SETUP_WELCOME_IMAGE_BUTTON = 'setup_welcome_image_btn';
 const SETUP_VERIFIED_REPLY_BUTTON = 'setup_verified_reply_btn';
 const SETUP_WIZARD_EDIT_SELECT = 'setup_wizard_edit_select';
 
-// Generic named channel-placeholder feature (e.g. {rules} -> #rules-channel)
 const SETUP_CHANNEL_PLACEHOLDER_BUTTON = 'setup_channel_placeholder_btn';
 const SETUP_CHANNEL_PLACEHOLDER_NAME_MODAL = 'setup_channel_placeholder_name_modal';
 const SETUP_CHANNEL_PLACEHOLDER_SELECT = 'setup_channel_placeholder_select';

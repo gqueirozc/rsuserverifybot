@@ -631,6 +631,7 @@ client.on('interactionCreate', async interaction => {
         let member = null;
         try {
             member = await interaction.guild.members.fetch(interaction.user.id);
+            await member.setNickname(rsn);
         } catch (err) {
             console.error('Member fetch error:', err);
         }
