@@ -345,6 +345,12 @@ client.on('interactionCreate', async interaction => {
 
             await confirmation.update({ content: '⏳ Processing...', components: [] });
 
+            try {
+                await member.setNickname(rsn);
+            } catch (err) {
+                console.error('Nickname error:', err);
+            }
+
             const roleName = await applyVerifiedRole(member, guildCfg);
             await removeWelcomeMessage(client, cfg, gid, guildCfg, member.id);
             await saveConfig(cfg);
