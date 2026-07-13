@@ -1,0 +1,14 @@
+{
+  "name": "verify-bot",
+  "version": "1.0.0",
+  "description": "Simple name-verification bot: checks a name exists, grants a role, sends an ephemeral confirmation.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.7.0"
+  }
+}
