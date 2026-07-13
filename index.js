@@ -346,7 +346,7 @@ client.on('interactionCreate', async interaction => {
             await confirmation.update({ content: '⏳ Processing...', components: [] });
 
             try {
-                await member.setNickname(rsn);
+                await member.setNickname(name);
             } catch (err) {
                 console.error('Nickname error:', err);
             }
@@ -637,7 +637,7 @@ client.on('interactionCreate', async interaction => {
         let member = null;
         try {
             member = await interaction.guild.members.fetch(interaction.user.id);
-            await member.setNickname(rsn);
+            await member.setNickname(name);
         } catch (err) {
             console.error('Member fetch error:', err);
         }
